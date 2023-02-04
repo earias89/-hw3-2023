@@ -7,16 +7,23 @@ body{
 header, nav{
     /* Set padding and margin */
     padding: 15px 10px 15px 10px;
-    margin: auto;
+    margin: 15px 30px 15px 30px;
 }
 nav ul li{
     /* Set display, margin, padding, font-size, background-color */
     display: inline-block;
     /*line-height: 2;*/
-    padding: 20px;
-    margin: auto;
-    font-size: 15px;
-    background-color: blanchedalmond;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    /*margin: 50px; (this instead of all sides specified below?)*/
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    font-size: 25px;
+    background-color: rgb(255, 205, 169);
 }
 
 nav a{
@@ -32,78 +39,105 @@ a:visited{
 nav a.current{
     /* Set text decoration, transformation, and underline properties */
     text-decoration-style: wavy;
+    text-decoration-line: underline;
     text-transform: uppercase;
 }
 
 
 h1{
    /*Set font and font size*/
-   font-size: 45px;
-   font-family: Merriweather, Anton, "Times New Roman", Ariel;
+   font-size: 42px;
+   font-family: Merriweather, Anton, "Times New Roman", Arial;
 }
 
 h2{
     /*Set font, font size, and alignment*/
-    font-size: 30px;
-    font-family: Anton, "Times New Roman", Ariel;
+    font-size: 32px;
+    font-family: Anton, "Times New Roman", Arial;
     text-align: center;
 }
 
 h3{
     /*Set font size*/
-    font-size: 20px;
+    font-size: 22px;
 
 }
 
 h1, h2, h3{
     /*Set margin */
-    margin-top: 15px;
+    margin-top: 50px;
 
 }
 .grid{
     /*Set width, margin, border properties, background color, and grid properties */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    width: 620px;
-    border: 3px solid black;
     border-radius: 25px;
-    padding ;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px; /*auto?*/
+    border: 1px solid black;
+    box-sizing: border-box;
+    column-count: 3;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(93, 131, 168);
 }
 
 .grid div{
     /* Set border properties, padding, and background color */
-
+    border-radius: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; /*auto?*/
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
 }
 
 .grid img{
     /* Set width, margin, and display */
+    display: grid;
+   /* grid-template-columns: 1fr
+    align-items: center;
+    justify-items: center;*/
+    width: 100px;
+    margin: 0px auto;
 }
 
 
 .grid div:nth-child(3n+1)  {
     /* Set box shadow */
+    box-shadow: 5px 0px 5px -5px rgba(175, 174, 174, 0.819);
     }
 
 .grid div:nth-child(3n)  {
     /* Set box shadow */ 
+    box-shadow: -5px 0px 5px -5px rgba(175, 174, 174, 0.819);
 }
 
 .grid div:nth-child(3n+2)  {
      /* Set box shadow */
+    box-shadow: 5px 0px 5px -5px rgba(175, 174, 174, 0.819) -5px 0px 5px -5px rgba(175, 174, 174, 0.819);
 }
     
 
 p + p {
      /* Set indentation */
+     text-indent: 25px;
   }
   
 p{
      /* Set margin */
+     margin-top: 10px;
 }
 
 
 .grid ul li{
     /* Set margin, line-spacing, list styling  */
+    margin: auto;
+    line-height: 1px;
+    list-style-image: url('sketchbook.png');
+    margin-left: 25px;
+    margin-bottom: 10px;
 }
